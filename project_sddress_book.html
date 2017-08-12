@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>项目通讯录</title>
+    <link rel="stylesheet" type="text/css" href="./dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/commom.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="./dist/semantic.min.js"></script>
+</head>
+<body>
+<!---->
+<aside>
+
+    <div class="ui vertical accordion menu" id="aside">
+
+        <div class="item aside_logo" >
+            <img  src="img/logo.png" class="ui image" style="display: inline-block">
+            <input type="button"  id="small_btn">
+        </div>
+
+        <div class="item">
+            <a class=" title aside_f">
+                <i class="add to calendar icon"></i>基础档案
+                <i class="dropdown icon"></i>
+            </a>
+            <div class="content">
+                <div class="item">
+                    <a class="title">  基础档案1<i class="dropdown icon"></i></a>
+                    <div class="content">
+                        <a class="item"> 项目档案11</a>
+                        <a class="item"> 项目档案12 </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="title">  基础档案1<i class="dropdown icon"></i></a>
+                    <div class="content">
+                        <a class="item"> 项目档案11</a>
+                        <a class="item"> 项目档案12 </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <a class=" title aside_f" >
+                <i class="clone icon"></i>项目档案
+                <i class="dropdown icon"></i>
+            </a>
+            <div class="content">
+                <div class="item">
+                    <a class="title">
+                        <i class="add to calendar icon"></i>项目档案1
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="title">
+                        <i class="add to calendar icon"></i>项目档案2
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <a class=" title aside_f" >
+                <i class="edit icon"></i>订单
+                <i class="dropdown icon"></i>
+            </a>
+            <div class="content">
+                <div class="item">
+                    <a class="title">
+                        <i class="add to calendar icon"></i>项目档案1
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="title">
+                        <i class="add to calendar icon"></i>项目档案2
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <a class=" title aside_f">
+                <i class="add to calendar icon"></i>资金
+                <i class="dropdown icon"></i>
+            </a>
+            <div class="content">
+                <div class="item">
+                    <a class="title">
+                        <i class="add to calendar icon"></i>项目档案1
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="title">
+                        <i class="add to calendar icon"></i>项目档案2
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <a class="title aside_f" href="project_target.html"  >  <i  class="browser icon"></i>项目任务</a>
+        </div>
+        <div class="item">
+            <a class="title aside_f" href="project_order.html ">  <i  class="file text outline icon"></i>项目订单</a>
+        </div>
+        <div class="item">
+            <a class="title aside_f" href="project_funds.html">  <i  class="dollar icon"></i>项目资金</a>
+        </div>
+        <div class="item active">
+            <a class="title aside_f" href="project_sddress_book.html">  <i  class="book icon"></i>项目通讯录</a>
+        </div>
+        <div class="item">
+            <a class="title aside_f "href="project_file.html">   <i class="file text icon"></i>项目文件</a>
+        </div>
+
+    </div>
+</aside>
+<article>
+    <div class="project_all_wrap">
+        <nav>
+            <div class="ui segment">
+                <div class="ui secondary menu" >
+                    <div class="ui right secondary  menu">
+                        <div class="item"><i class="large home icon"></i></div>
+                        <div class="item"><i class="setting icon"></i> </div>
+                        <div class="item"><img src="./img/st.png"   style="width:2px" height="30"> </div>
+                        <div class="item">
+                            <div class="ui dropdown">
+                                <div class="text">
+                                    <img class="ui avatar image" src="img/admin.png">
+                                    夜微凉
+                                </div>
+                                <i class="massive dropdown  icon  project_drop"></i>
+                                <div class="menu">
+                                    <div class="item">
+                                        <img class="ui avatar image" src="img/admin.png">
+                                        admin
+                                    </div>
+                                    <div class="item">
+                                        <img class="ui avatar image" src="img/admin.png">
+                                        七月
+                                    </div>
+                                    <div class="item">
+                                        <img class="ui avatar image" src="img/admin.png">
+                                        夜微凉
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section >
+            <div class="project_all_r">
+                <div class="ui basic   segment project_tit">
+                    <div class="content">
+                        项目订单
+                    </div>
+                </div>
+                <div class="ui segment project_pro">
+                    <div class="content">项目名称：
+                        <select class="ui search center aligned dropdown">
+                            <option value="MS"> 衢州辉宏建设有限公司</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                        </select>
+                        <button class="ui compact button">更改项目</button>
+                    </div>
+                </div>
+                <!--table开始-->
+                <div class="ui segment">
+                    <div class="ui basic active tab segment">
+                        <table class="ui large center aligned striped eight column table" >
+                            <thead>
+                                <tr>
+                                    <th>操作描述</th>
+                                    <th>创建人</th>
+                                    <th>创建时间</th>
+                                    <th>文件标题</th>
+                                    <th>文件名称</th>
+                                    <th>备注</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>何易文</td>
+                                    <td>2017-07-05 11:04:09</td>
+                                    <td>信息</td>
+                                    <td>14992219541.jpeg</td>
+                                    <td>新信息</td>
+                                    <td class="table_pro_download">下载文件</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>闲云</td>
+                                    <td>2017-07-05 11:04:09</td>
+                                    <td>信息</td>
+                                    <td>07-12修改.txt</td>
+                                    <td>新信息</td>
+                                    <td class="table_pro_download">下载文件</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th colspan="7">
+                                        <div class="ui right floated pagination menu">
+                                            <a class="icon item">
+                                                <i class="left chevron icon"></i>
+                                                <i class="left chevron icon"></i>&nbsp;&nbsp;上一页
+                                            </a>
+                                            <a class="item" id="active">1</a>
+                                            <a class="item">2</a>
+                                            <a class="item">3</a>
+                                            <a class="item">4</a>
+                                            <a class="icon item">
+                                                下一页&nbsp;&nbsp;
+                                                <i class="right chevron icon"></i>
+                                                <i class="right chevron icon"></i>
+                                            </a>
+                                            <div class="item">
+                                                <span>到第</span>&nbsp;
+                                                <input class="input" style="width: 22px">&nbsp;
+                                                <span>页</span>
+                                            </div>
+                                            <button class="item" type="submit" style="border: none">
+                                                确定
+                                            </button>
+
+                                        </div>
+                                    </th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <!--table结束-->
+            </div>
+        </section>
+    </div>
+</article>
+<script>
+    /*侧边栏点击切换active*/
+    $(function(){
+        $("#aside .aside_f").click(function(){
+            $(this).parent().addClass('active');
+            $(this).parent().siblings().removeClass('active')
+        });
+    });
+    /*侧边栏下拉*/
+    $('.ui.accordion')
+            .accordion()
+    ;
+    /*我的订单待结算选项卡*/
+    $('.menu .item')
+            .tab()
+    ;
+    /*管理员选择*/
+    $('.ui.dropdown')
+            .dropdown()
+    ;
+</script>
+
+</body>
+</html>
